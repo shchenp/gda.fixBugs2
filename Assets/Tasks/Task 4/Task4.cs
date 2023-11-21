@@ -5,7 +5,7 @@ public class Task4 : MonoBehaviour
     [SerializeField] 
     private Transform _shelfPrefab;
     
-    private void Start()
+    private void OnDisable()
     {
         Instantiate(_shelfPrefab); // Эту строку кода удалять нельзя
         
