@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// Измените этот скрипт
@@ -12,11 +13,17 @@ public class Wall : MonoBehaviour
 
     private void Awake()
     {
-        
+        _detector = FindObjectOfType<Detector>();
+        _detector.CoinDetected += ChangePosition;
     }
 
     private void ChangePosition()
     {
         transform.position = _targetPosition;
+    }
+
+    private void OnDestroy()
+    {
+        _detector.CoinDetected -= ChangePosition;
     }
 }
