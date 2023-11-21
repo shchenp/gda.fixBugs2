@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallPrefab: {fileID: 7700775821750676613, guid: 12c332c69a7fb5f478bdd22e5b770d30, type: 3}
-  _tagetScale: {x: 2, y: 2, z: 2}
+  _targetScale: {x: 2, y: 2, z: 2}
 --- !u!4 &185697278
 Transform:
   m_ObjectHideFlags: 0
